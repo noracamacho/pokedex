@@ -568,10 +568,10 @@ hr {
 .footer p a {
     text-decoration: none;
     /* color: rgb(150, 148, 148); */
-    color: #d2a5a5;
+    color: #ff5f5f;
 }
 .footer p a:hover {
-    color: #d2a5a5;
+    color: #cccccc;
     font-weight: 700;
     text-decoration: underline;
     transition: 0.6s;
