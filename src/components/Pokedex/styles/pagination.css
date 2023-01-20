@@ -16,7 +16,7 @@
     /* font-weight: bold; */
     cursor: pointer;
     text-align: center;
-    color: var(--pagination-font-colot);
+    color: var(--dark-font-color);
 
 }
 .page__active {

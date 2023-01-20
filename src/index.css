@@ -3,6 +3,7 @@
 :root {
     --light-font-color: whitesmoke;
     --dark-font-color: #302F2F;
+    --fixed-dark-font-color: #302F2F;
     --light-background-color:  #E5E5E5;;
     --white-background-color: #FFFFFF;
     --grey-background-color: #9F9F9F;
@@ -25,8 +26,14 @@ body {
     font-family: 'Roboto', sans-serif;
     /* background-color: rgb(242, 242, 242); */
     background-color: var(--light-background-color);
-    color: var(--dark-font-color);
+    color:var(--dark-font-color);
 }
+/* DARK MODE */
+body.dark {
+    --light-background-color: rgba(12, 12, 12, 1);
+    --dark-font-color: whitesmoke;
+}
+
 
 /* body.dark {} */
 

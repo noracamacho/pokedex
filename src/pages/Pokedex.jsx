@@ -6,6 +6,7 @@ import Pagination from '../components/Pokedex/Pagination';
 import PokeCard from '../components/Pokedex/PokeCard';
 import circles from '../assets/circlesr.png';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+// import SettingsSharpIcon from '@mui/icons-material/SettingsSharp';
 
 const Pokedex = () => {
 
@@ -87,20 +88,15 @@ const Pokedex = () => {
           }
         </select>
       </div>
-      {/* PAGINATION  */}
-      {/* <Pagination currentPage={currentPage} maxNumberOfPages={maxNumberOfPages} setCurrentPage={setCurrentPage}/> */}
       <div className='pokemon__container'>
         {
           pokemons?.slice(initialIndex, finalIndex).map((pokemon) => (
-            <PokeCard 
-            key={pokemon.url} 
-            url={pokemon.url}
-            />
+            <PokeCard key={pokemon.url} url={pokemon.url} />
           ))
         }
       </div>
+      {/* PAGINATION  */}
       <Pagination currentPage={currentPage} maxNumberOfPages={maxNumberOfPages} setCurrentPage={setCurrentPage}/>
-
     </div>
   )
 }
