@@ -17,7 +17,6 @@
     cursor: pointer;
     text-align: center;
     color: var(--dark-font-color);
-
 }
 .page__active {
     background-color: rgba(221, 26, 26, 1);

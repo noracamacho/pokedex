@@ -25,7 +25,6 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    /* background-color: rgb(242, 242, 242); */
     background-color: var(--light-background-color);
     color:var(--dark-font-color);
 }
@@ -35,10 +34,6 @@ body.dark {
     --dark-font-color: whitesmoke;
     --white-background-color:#a9a9a9;
 }
-
-
-/* body.dark {} */
-
 h1, h2, h3, h4, p, ul {
     margin-top: 0;
     margin-bottom: 0;

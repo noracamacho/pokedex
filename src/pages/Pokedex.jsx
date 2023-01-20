@@ -50,8 +50,7 @@ const Pokedex = () => {
     const input = e.target.search.value.trim().toLowerCase();
     navigate(`/pokedex/${input}`)
   }
-  // console.log(object);
-
+  
   const handleChange = (e) => {
     setTypeSelected(e.target.value);
     setCurrentPage(1);
