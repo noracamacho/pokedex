@@ -20,7 +20,7 @@
 }
 .poke__card__body {
     padding-top: 2.6rem;
-    background: var(--white-background-color);
+    background: var(--fixed-light-background-color);
 }
 .poke__card__name {
     text-align: center;
@@ -38,7 +38,7 @@
     font-weight: 300;
     text-transform: capitalize;
     font-size: 14px;
-}
+}   
 .poke__card__type:nth-child(2)::before {
     content: '/';
     position: absolute;
@@ -46,7 +46,7 @@
 }
 .poke__card__footer {
     padding: 1rem 0.8rem 2rem;
-    background: var(--white-background-color);
+    background: var(--fixed-light-background-color);
 
 }
 .poke__card__stats__container{

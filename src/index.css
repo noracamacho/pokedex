@@ -4,7 +4,8 @@
     --light-font-color: whitesmoke;
     --dark-font-color: #302F2F;
     --fixed-dark-font-color: #302F2F;
-    --light-background-color:  #E5E5E5;;
+    --fixed-light-background-color:#FFFFFF;
+    --light-background-color:  #E5E5E5;
     --white-background-color: #FFFFFF;
     --grey-background-color: #9F9F9F;
     --shadow-color: rgba(0, 0, 0, 0.15);
@@ -32,6 +33,7 @@ body {
 body.dark {
     --light-background-color: rgba(12, 12, 12, 1);
     --dark-font-color: whitesmoke;
+    --white-background-color:#a9a9a9;
 }
 
 

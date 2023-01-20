@@ -6,6 +6,8 @@ import Pagination from '../components/Pokedex/Pagination';
 import PokeCard from '../components/Pokedex/PokeCard';
 import circles from '../assets/circlesr.png';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+// import { useSelector, useDispatch } from 'react-redux';
+
 // import SettingsSharpIcon from '@mui/icons-material/SettingsSharp';
 
 const Pokedex = () => {
@@ -16,6 +18,7 @@ const Pokedex = () => {
   const [typeSelected, setTypeSelected] = useState('All pokemons');
 
   const navigate = useNavigate();
+
 
   useEffect(() => {
     if( typeSelected !== "All pokemons") {
@@ -56,7 +59,9 @@ const Pokedex = () => {
 
   //! Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const [pokemonsPerPage, setPokemonsPerPage] = useState(16);
+  // const [pokemonsPerPage, setPokemonsPerPage] = useState(16);
+  //! Global
+  const {pokemonsPerPage} = useSelector(state => state);
   const initialIndex = (currentPage -1) * pokemonsPerPage;
   const finalIndex = currentPage * pokemonsPerPage;
   const maxNumberOfPages = pokemons && Math.ceil(pokemons?.length / pokemonsPerPage);

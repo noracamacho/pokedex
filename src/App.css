@@ -33,7 +33,7 @@
     line-height: 30px;
     align-items: center;
     text-align: center;
-    color: #302F2F;
+    color: var(--dark-font-color);
     margin: 0 auto;
 }
 .home__input__section {
@@ -72,6 +72,9 @@
     font-size: 25px;
     border: none;
 }
+.config__dark__mode {
+    margin-bottom: 4rem;
+}
 .config__section {
     color: var(--dark-font-color);
     /* color: #302F2F; */
@@ -79,7 +82,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 20rem;
+    text-align: center;
+    top: 17rem;
+    /* margin-bottom: 5rem; */
+}
+.config__options__per__page {
+    width: 6rem;
+    height: 3rem;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 6px solid var(--dark-font-color);
+    border-radius: 5px;
+    background-color: var(--light-background-color);
+    color: var(--dark-font-color);
 }
 .circle__img {
     position: absolute;
@@ -203,7 +221,7 @@
 }
 .search__form input {
     position: absolute;
-    width: 80%;
+    width: 81%;
     height: 68px;
     border: none;
     background: #FFFFFF;
@@ -285,7 +303,7 @@ hr {
     max-width: 79.1%;
     height: 1300px;
     /* background: #FFFFFF; */
-    background-color: var( --white-background-color);
+    background-color: var(--white-background-color);
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -302,6 +320,7 @@ hr {
     margin: 0 auto 20rem auto;
     text-align: center;
     top: 14rem;
+    background-color: var(--white-background-color);
 }
 .pokedexid__title__info {
     margin-bottom: 5rem;
@@ -517,6 +536,7 @@ hr {
     padding: 0 1rem;
     display: flex;
     justify-content: space-around;
+    background-color: var(--white-background-color);
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -646,7 +666,8 @@ hr {
 
 @media screen and (max-width: 857px){
 
-    .column__left>.column__items {
+    .column__left>.column__items,
+    .column__right>.column__items {
         flex-direction: column !important;
         width: 100%;
         margin: 0 auto;
