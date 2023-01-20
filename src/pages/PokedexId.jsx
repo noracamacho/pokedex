@@ -19,14 +19,15 @@ const PokedexId = () => {
             .then(response => setPokemon(response.data))
             .catch(err => console.log(err));
     }, [id]);
-    console.log('pokemonSearch', pokemon);
+    // console.log('pokemonSearch', pokemon);
     const filteredStats = pokemon?.stats.filter( stat => stat.stat.name !== 'special-attack' & stat.stat.name !== 'special-defense');
-    console.log(filteredStats);
-    console.log('pokemonid', pokemon, id);
-    console.log('type', typeof(id), id);
+    // console.log(filteredStats);
+    // console.log('pokemonid', pokemon, id);
+    // console.log('type', typeof(id), id);
     const goBack = () => navigate(-1);
 
   return (
+    <>   
     <div>
       <div className='pokedex__red'></div>
       <div className='pokedex__black'></div>
@@ -39,7 +40,9 @@ const PokedexId = () => {
         </div>
         <div className='pokedexid__body'>
           <div className='pokedexid__title__info'>
+            {/* <h3 className={`color__${pokemon?.types[0].type.name}`}>{`#${pokemon?.id}`}</h3> */}
             <h3 className={`color__${pokemon?.types[0].type.name}`}>{`#${pokemon?.id}`}</h3>
+
             <div className='pokedex__name__title'>
               <hr />
               <h1 className={`color__${pokemon?.types[0].type.name}`}>{pokemon?.name}</h1>
@@ -92,7 +95,10 @@ const PokedexId = () => {
               }
             </ul>
           </div>
-          <div className='pokedexid__movements__container'>
+          
+        </div>
+
+        <div className='pokedexid__movements__container'>
             <img src={movementImg} className='movement__img' alt="image" />
             <div className='pokedexid__movements__subcontainer'>
               {
@@ -100,9 +106,10 @@ const PokedexId = () => {
               }
             </div>
           </div>
-        </div>
+
       </div>
     </div>
+    </>
   )
 }
 

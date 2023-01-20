@@ -16,9 +16,10 @@
     /* font-weight: bold; */
     cursor: pointer;
     text-align: center;
-    color: #212121;
+    color: var(--pagination-font-colot);
+
 }
 .page__active {
     background-color: rgba(221, 26, 26, 1);
-    color: white;
+    color: var(--light-font-color);
 }

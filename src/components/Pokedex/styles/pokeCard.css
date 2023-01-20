@@ -20,6 +20,7 @@
 }
 .poke__card__body {
     padding-top: 2.6rem;
+    background: var(--white-background-color);
 }
 .poke__card__name {
     text-align: center;
@@ -45,6 +46,8 @@
 }
 .poke__card__footer {
     padding: 1rem 0.8rem 2rem;
+    background: var(--white-background-color);
+
 }
 .poke__card__stats__container{
     display: grid;
