@@ -19,11 +19,10 @@ const PokedexId = () => {
         const URL = `https://pokeapi.co/api/v2/pokemon/${id}`
         axios.get(URL)
             .then(response => setPokemon(response.data))
-            .catch(err => {
+            .catch(err => { 
               console.log('err', err);
               setPokemonExist(false);
             });
-        // isUndefined()
     }, [id]);
 
    console.log(pokemonExist);

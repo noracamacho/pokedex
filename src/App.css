@@ -209,7 +209,6 @@ h1, h2, h3, h4 {
 }
 .search__form {
     position: relative;
-    /* top: 13rem; */
     height: 68px;
     width: 48%;
     left: 0;
@@ -557,6 +556,7 @@ hr {
     text-decoration: underline;
     transition: 0.6s;
 }
+
 @media screen and (max-width: 857px){
     .search__section{
         display: flex;
@@ -586,11 +586,17 @@ hr {
         position: relative;
         width: 60%;
         height: auto;
-        top: 150px;
+        top: 130px;
+    }
+    .home__title {
+        top: 200px;
+    }
+    .home__p {
+        top: 215px;
     }
     .home__input__section {
         position: absolute;
-        top: 13rem;
+        top: 8rem;
         width: 4rem;
     }
     .home__button {
@@ -647,4 +653,70 @@ hr {
         height: 6rem;
         word-spacing: 1px;
     }
+}
+@media screen and (max-width: 400px){
+    .home__img {
+        position: relative;
+        width: 60%;
+        height: auto;
+        top: 100px;
+    }
+    .home__title {
+        top: 140px;
+    }
+    .home__p {
+        top: 150px;
+    }
+    .home__input__section {
+        position: absolute;
+        font-size: 16px;
+        top: 3rem;
+        width: 2rem;
+    }
+    .home__button {
+        font-size: 16px;
+        padding: 1rem;
+    }
+    ._red {
+        bottom: 40px;
+        height: 70px;
+    }
+    ._black {
+        height: 50px;
+    }
+    .pokedex__circles {
+        right: 2rem;
+    }
+    .back__icon {
+        right: 3.7rem;
+    }
+    .pokedex__img {
+        top: 4.2rem;
+        left: 1rem;
+    }
+    .config__section {
+        top: 11rem;
+    }
+    .search__form input {
+        position: absolute;
+        width: 81%;
+        height: 68px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+        font-size: 19px;
+        padding-inline-start: .7rem;
+    }
+    .search__form button {
+        width: fit-content;
+        padding: 0 .7rem;
+        position: absolute;
+        right: 0;
+        height: 68px;
+        background: #D93F3F;
+        border: none;
+        font-size: 14px;
+        color: #ffff;
+    }
+
 }

@@ -14,7 +14,7 @@ const Pokedex = () => {
 
   const {trainer} = useSelector(state => state);
   const [pokemons, setPokemons] = useState();
-  const [types, setTypes] = useState()
+  const [types, setTypes] = useState([])
   const [typeSelected, setTypeSelected] = useState('All pokemons');
 
   const navigate = useNavigate();
