@@ -22,7 +22,7 @@ const PokedexId = () => {
               Swal.fire({
                 position: 'center',
                 icon: 'error',
-                title: `Pokemon ${id} does not exist, please enter a valid pokemon name`,
+                title: `Pokemon " ${id} " does not exist, please enter a valid pokemon name`,
                 showConfirmButton: true,
                 confirmButtonColor: '#D93F3F',
               });
