@@ -128,7 +128,8 @@
     background-image: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
 }
 .bg__psychic {
-    background-image: linear-gradient(179.75deg,#F85888 -19.96%, #C23867 43.67%, #CD7D98 138.4%)
+    /* background-image: linear-gradient(179.75deg,#F85888 -19.96%, #C23867 43.67%, #CD7D98 138.4%) */
+    background-image: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%);
 }
 /* BORDERS */
 .border__grass {
@@ -180,7 +181,7 @@
     border-color: #654008;
 }
 .border__psychic {
-    border-color: #cf456f;
+    border-color: #E52D2D;
 }
 
 .color__grass {
@@ -232,5 +233,5 @@
     color: rgba(101, 64, 8, 1);
 }
 .color__psychic {
-    color: #F85888;
+    color: #E52D2D;
 }

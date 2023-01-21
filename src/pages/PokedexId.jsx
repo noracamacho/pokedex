@@ -104,9 +104,9 @@ const PokedexId = () => {
                 {
                     filteredStats?.map((stat) => (
                       <>
-                        <li className='poke__card__stats stats__row' key={stat.stat.name}><span>{stat.stat.name}</span><span>{stat.base_stat}/150</span></li> 
+                        <li className='poke__card__stats stats__row' key={stat.stat.name}><span>{stat.stat.name}</span><span>{stat.base_stat}/160</span></li> 
                         <div className='progress-bar-container'>
-                          <div className='progress-filler' style={{width: `${(stat.base_stat)*100/150}%`, max:'150'}}>
+                          <div className='progress-filler' style={{width: `${(stat.base_stat)*100/160}%`, max:'160'}}>
                           {/* <span className='progress-label'>{`${stat.base_stat}%`}</span> */}
                           </div>
                         </div>
