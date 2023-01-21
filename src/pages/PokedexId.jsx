@@ -18,6 +18,7 @@ const PokedexId = () => {
         axios.get(URL)
             .then(response => setPokemon(response.data))
             .catch(err => { 
+              navigate('/pokedex');
               console.log('err', err);
               Swal.fire({
                 position: 'center',
@@ -26,7 +27,6 @@ const PokedexId = () => {
                 showConfirmButton: true,
                 confirmButtonColor: '#D93F3F',
               });
-              navigate('/pokedex');
             });
     }, [id]);
 
