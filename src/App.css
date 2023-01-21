@@ -413,6 +413,9 @@ hr {
     color:#302F2F;
     text-transform: capitalize;
 }
+ConfigIcon:hover {
+    cursor: pointer;
+}
 .poke__type {
     color: #FFFFFF;
     border: none;
