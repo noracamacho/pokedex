@@ -1,6 +1,6 @@
 import React from 'react'
 
-function footer() {
+function Footer() {
   return (
     <div className="footer">
         <p>Built by <a href="https://www.linkedin.com/in/noraelisacamacho/" target="_blank">Nora Camacho</a> for <a href="https://www.academlo.com" target="_blank">Academlo</a> Bootcamp:</p>
@@ -9,4 +9,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer

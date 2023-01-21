@@ -6,6 +6,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    height: fit-content;
 }
 .home__img {
     position: relative;
@@ -22,7 +23,7 @@ h1, h2, h3, h4 {
     top: 250px;
     text-align: center;
     line-height: 60.51px;
-    width: 662px;
+    width: 100%;
     letter-spacing: 2px;
 }
 .home__p {
@@ -654,7 +655,7 @@ hr {
         word-spacing: 1px;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     .home__img {
         position: relative;
         width: 60%;
@@ -717,6 +718,13 @@ hr {
         border: none;
         font-size: 14px;
         color: #ffff;
+    }
+    Footer,
+    .footer {
+        display: none;
+    }
+    ._black {
+        bottom: 0;
     }
 
 }
