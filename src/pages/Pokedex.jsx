@@ -69,6 +69,7 @@ const Pokedex = () => {
   console.log(pokemonsPerPage);
 
   const goBack = () => navigate(-1);
+  const goHome = () => navigate('/');
 
   return (
     <div>
@@ -76,7 +77,7 @@ const Pokedex = () => {
       <div className='pokedex__black'></div>
       <img className='pokedex__circles' src={circles} alt="" />
       <ArrowBackIcon  className='back__icon' onClick={goBack}/>
-      <img onClick={goBack} className='pokedex__img' src="/Home/pokedex.png" alt="pokedex" />
+      <img onClick={goHome} className='pokedex__img' src="/Home/pokedex.png" alt="pokedex" />
       <h2 className='pokedex__welcome'>Welcome {trainer}, <span className='pokedex__welcome__span'> here you can find your favorite pokemons.</span></h2>
       <div className='search__section'>
         <form className='search__form' onSubmit={handleSubmit}>

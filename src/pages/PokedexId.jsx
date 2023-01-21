@@ -27,12 +27,14 @@ const PokedexId = () => {
                 showConfirmButton: true,
                 confirmButtonColor: '#D93F3F',
               });
+              navigate('/pokedex');
             });
     }, [id]);
 
     console.log('pokemonSearch', pokemon);
     const filteredStats = pokemon?.stats.filter( stat => stat.stat.name !== 'special-attack' & stat.stat.name !== 'special-defense');
     const goBack = () => navigate(-1);
+    const goHome = () => navigate('/');
 
   return (
     <>   
@@ -41,7 +43,7 @@ const PokedexId = () => {
       <div className='pokedex__black'></div>
       <img className='pokedex__circles' src={circlesr} alt="" />
       <ArrowBackIcon  className='back__icon' onClick={goBack}/>
-      <img className='pokedex__img' src="/Home/pokedex.png" alt="pokedex" />
+      <img className='pokedex__img' src="/Home/pokedex.png" alt="pokedex" onClick={goHome}/>
       <div className='pokedexid__card_container'>
             <div className={`pokedex__upper__card bg__${pokemon?.types[0].type.name}`}>
               <img className='pokedexid__img' src={pokemon?.sprites.other['official-artwork'].front_default} alt="pokemon image" />

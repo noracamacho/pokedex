@@ -13,6 +13,7 @@ const Config = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const goBack = () => navigate(-1);
+  const goHome = () => navigate('/');
   const {theme} = useSelector(state => state);
   const {pokemonsPerPage} = useSelector(state => state);
 
@@ -34,7 +35,7 @@ const Config = () => {
       <div className='pokedex__black'></div>
       <img className='pokedex__circles' src={circlesr} alt="" />
       <ArrowBackIcon  className='back__icon' onClick={goBack}/>
-      <img onClick={goBack} className='pokedex__img' src="/Home/pokedex.png" alt="pokedex" />
+      <img onClick={goHome} className='pokedex__img' src="/Home/pokedex.png" alt="pokedex" />
       <section className='config__section' >
         <div className='config__dark__mode'>
           <SettingsBrightnessIcon sx={{ fontSize: 70 }} onClick={() => {dispatch(setThemeGlobal(!theme))}} style={{cursor: 'pointer'}}/>
