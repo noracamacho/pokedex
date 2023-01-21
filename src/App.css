@@ -1,3 +1,6 @@
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
 .home__page {
     display: flex;
     flex-direction: column;
@@ -19,15 +22,12 @@
     top: 250px;
     text-align: center;
     line-height: 60.51px;
-    font-family: sans-serif !important;
-    font-style: normal;
     width: 662px;
     letter-spacing: 2px;
 }
 .home__p {
     position: relative;
     top: 245px;
-    font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
@@ -59,7 +59,6 @@
 }
 .home__button {
     position: relative;
-    font-style: normal;
     font-weight: 500;
     line-height: 28px;
     align-items: center;
@@ -323,8 +322,6 @@ hr {
     margin-bottom: 5rem;
 }
 .pokedexid__title__info h3{
-    font-style: normal;
-    font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     width:fit-content;
@@ -339,8 +336,6 @@ hr {
     margin: 0 auto 2rem auto;
 }
 .pokedexid__title__info h1{
-    font-style: normal;
-    font-weight: 500;
     font-size: 45px;
     line-height: 53px;
     text-transform: capitalize;
@@ -385,8 +380,6 @@ hr {
     width: 50%;
     justify-content: center;
     align-items: center;
-    font-style: normal;
-    font-weight: 500;
     font-size: 30px;
     line-height: 35px;
     margin: 0 auto;
@@ -419,7 +412,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
@@ -547,7 +539,6 @@ hr {
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
