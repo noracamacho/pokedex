@@ -9,12 +9,9 @@ import Swal from "sweetalert2";
 
 const PokedexId = () => {
 
-  const navigate = useNavigate();
-
+    const navigate = useNavigate();
     const { id } = useParams();
     const [pokemon, setPokemon] = useState();
-    // const [pokemonExist, setPokemonExist] = useState(true);
-    const pokeName = id;
 
     useEffect(() => {
         const URL = `https://pokeapi.co/api/v2/pokemon/${id}`
@@ -33,15 +30,6 @@ const PokedexId = () => {
             });
     }, [id]);
 
-  //  console.log(pokemonExist);
-
-    // const isUndefined = () => {
-    //   if (pokemon?.id === undefined)  {
-    //     navigate(-1);
-    //     alert('Pokemon does not exist')
-    //   }
-        
-    // }
     console.log('pokemonSearch', pokemon);
     const filteredStats = pokemon?.stats.filter( stat => stat.stat.name !== 'special-attack' & stat.stat.name !== 'special-defense');
     const goBack = () => navigate(-1);
@@ -55,24 +43,17 @@ const PokedexId = () => {
       <ArrowBackIcon  className='back__icon' onClick={goBack}/>
       <img className='pokedex__img' src="/Home/pokedex.png" alt="pokedex" />
       <div className='pokedexid__card_container'>
-        {/* {pokemonExist &&  */}
             <div className={`pokedex__upper__card bg__${pokemon?.types[0].type.name}`}>
               <img className='pokedexid__img' src={pokemon?.sprites.other['official-artwork'].front_default} alt="pokemon image" />
             </div>
-        {/* } */}
         <div className='pokedexid__body'>
           <div className='pokedexid__title__info'>
             <h3 className={`color__${pokemon?.types[0].type.name}`}>{`#${pokemon?.id}`}</h3>
-            {/* <h3 className={`color__${pokemon?.types[0].type.name}`}>{pokemonExist ? `#${pokemon?.id}` : `Pokemon ${pokeName.toLocaleUpperCase()} does not exist`}</h3> */}
-
             <div className='pokedex__name__title'>
               <hr />
-              {/* <h1 className={`color__${pokemon?.types[0].type.name}`}>{pokemonExist ? pokemon?.name : 'Please select a valid Pokemon name'}</h1> */}
               <h1 className={`color__${pokemon?.types[0].type.name}`}>{pokemon?.name}</h1>
-
               <hr />
             </div>
-            {/* {pokemonExist &&  */}
               <div className='pokedexid__measurements'>
                 <div>
                   <p className='measurement__title'>Weight</p>
@@ -83,15 +64,12 @@ const PokedexId = () => {
                   <p className='measurement'>{pokemon?.height}</p>
                 </div>
               </div>
-            {/* } */}
           </div>
-          {/* {pokemonExist &&  */}
             <div className='pokedexid__strengths__container'>
               <div className="column__left">
                 <h2>Type</h2>
                 <ul className='column__items'>
                   {
-                //  <header className={`poke__card__header bg__${pokemon?.types[0].type.name}`}>
                     pokemon?.types.map((type) => (<li className={`poke__type bg__color__${type.type.name}`} key={type.type.name}>{type.type.name}</li>))
                   }
                 </ul>
@@ -105,8 +83,6 @@ const PokedexId = () => {
                 </ul>
               </div>
             </div>
-          {/* } */}
-          {/* {pokemonExist &&  */}
             <div className="pokedexid__stats_container">
               <img src={statsImg} className='stats__img' alt="image" />
               <ul className='stats__row__container'>
@@ -116,18 +92,14 @@ const PokedexId = () => {
                         <li className='poke__card__stats stats__row' key={stat.stat.name}><span>{stat.stat.name}</span><span>{stat.base_stat}/160</span></li> 
                         <div className='progress-bar-container'>
                           <div className='progress-filler' style={{width: `${(stat.base_stat)*100/160}%`, max:'160'}}>
-                          {/* <span className='progress-label'>{`${stat.base_stat}%`}</span> */}
                           </div>
                         </div>
                       </>
                     ))
                 }
               </ul>
-            </div>
-          {/* } */}
-          
+            </div>          
         </div>
-        {/* {pokemonExist &&  */}
           <div className='pokedexid__movements__container'>
               <img src={movementImg} className='movement__img' alt="image" />
               <div className='pokedexid__movements__subcontainer'>
@@ -136,8 +108,6 @@ const PokedexId = () => {
                 }
               </div>
             </div>
-          {/* } */}
-
       </div>
     </div>
     </>
