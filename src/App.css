@@ -76,14 +76,12 @@ h1, h2, h3, h4 {
 }
 .config__section {
     color: var(--dark-font-color);
-    /* color: #302F2F; */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     top: 17rem;
-    /* margin-bottom: 5rem; */
 }
 .config__options__per__page {
     width: 6rem;
@@ -124,7 +122,6 @@ h1, h2, h3, h4 {
     bottom: 59px;
     left: 0;
 }
-
 .pokemon__container {
     position: relative;
     top: 16rem;
@@ -169,7 +166,6 @@ h1, h2, h3, h4 {
     top: 103px;
     background-color: rgba(12, 12, 12, 1);
 }
-
 .pokedex__circles {
     position: absolute;
     top: 5rem;
@@ -397,7 +393,6 @@ hr {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* max-width: 35rem; */
     flex-direction: row;
     justify-content: space-around;
     margin-top: 2rem;
@@ -476,7 +471,6 @@ hr {
 .bg__color__flying {
     background: #A890F0;
 }
-
 .stats__row:first-child {
     text-transform: uppercase;
   }
@@ -548,7 +542,6 @@ hr {
     bottom: -2.5rem;
     left: 3rem;
     height: 6rem;
-    /* background-color: #0C1395; */
     color: whitesmoke;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -564,7 +557,6 @@ hr {
     text-decoration: underline;
     transition: 0.6s;
 }
-
 @media screen and (max-width: 857px){
     .search__section{
         display: flex;
@@ -646,9 +638,7 @@ hr {
         font-size: 1.3rem;
         width: 95%;
     }
-    
 }
-
 @media screen and (max-width: 1150px){
     .footer {
         position: fixed;
@@ -658,5 +648,3 @@ hr {
         word-spacing: 1px;
     }
 }
-
-
