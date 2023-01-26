@@ -6,9 +6,6 @@ import Pagination from '../components/Pokedex/Pagination';
 import PokeCard from '../components/Pokedex/PokeCard';
 import circles from '../assets/circlesr.png';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-// import { useSelector, useDispatch } from 'react-redux';
-
-// import SettingsSharpIcon from '@mui/icons-material/SettingsSharp';
 
 const Pokedex = () => {
 
@@ -16,7 +13,6 @@ const Pokedex = () => {
   const [pokemons, setPokemons] = useState();
   const [types, setTypes] = useState([])
   const [typeSelected, setTypeSelected] = useState('All pokemons');
-
   const navigate = useNavigate();
 
 
@@ -46,7 +42,6 @@ const Pokedex = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Capturamos el formulario completo
     const input = e.target.search.value.trim().toLowerCase();
     navigate(`/pokedex/${input}`)
   }
@@ -58,7 +53,6 @@ const Pokedex = () => {
 
   //! Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  // const [pokemonsPerPage, setPokemonsPerPage] = useState(16);
   //! Global
   const {pokemonsPerPage} = useSelector(state => state);
   const initialIndex = (currentPage -1) * pokemonsPerPage;

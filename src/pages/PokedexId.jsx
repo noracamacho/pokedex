@@ -27,11 +27,10 @@ const PokedexId = () => {
                 showConfirmButton: true,
                 confirmButtonColor: '#D93F3F',
               });
-              navigate('/pokedex');
             });
     }, [id]);
 
-    console.log('pokemonSearch', pokemon);
+    // console.log('pokemonSearch', pokemon);
     const filteredStats = pokemon?.stats.filter( stat => stat.stat.name !== 'special-attack' & stat.stat.name !== 'special-defense');
     const goBack = () => navigate(-1);
     const goHome = () => navigate('/');

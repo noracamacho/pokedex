@@ -6,10 +6,6 @@ import Home from './pages/Home';
 import Pokedex from './pages/Pokedex';
 import PokedexId from './pages/PokedexId';
 import Config from './pages/Config';
-// import { createContext } from 'react';
-// import SettingsSharpIcon from '@mui/icons-material/SettingsSharp';
-
-// export const ThemeContext = createContext(null);
 
 function App() {
   return (
@@ -17,7 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/config' element={<Config />} />
-        {/* Rutas protegidas */}
+        {/* Protected route */}
         <Route element={<ProtectedRoutes />}>
           <Route path='/pokedex' element={<Pokedex />} />
           <Route path='/pokedex/:id' element={<PokedexId />} />

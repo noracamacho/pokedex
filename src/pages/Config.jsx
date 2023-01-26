@@ -52,7 +52,6 @@ const Config = () => {
         </select>
         <div className='config__msg' style={{fontWeight: 'bolder'}}>Select Number Of Cards Per Page</div>
         </div>
-        {/* <h1>Nora Camacho</h1> */}
       </section>
       <img className='circle__img' src={circles} alt="cicle" />
       <div className='_red'></div>
