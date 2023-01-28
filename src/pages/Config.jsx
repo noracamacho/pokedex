@@ -42,8 +42,8 @@ const Config = () => {
           <div className='config__msg' style={{fontWeight: 'bolder'}}>{theme ? 'Set Light Mode' : 'Set Dark Mode'}</div>
         </div>
         <div className='config__pokesPerPage'>
-        <select className='config__options__per__page' onChange={handleChange}>
-          <option value={pokemonsPerPage}>{pokemonsPerPage}</option>
+        <select className='config__options__per__page' onChange={handleChange} value={pokemonsPerPage}>
+          {/* <option value={pokemonsPerPage}>{pokemonsPerPage}</option> */}
           <option value={4}>4</option>
           <option value={8}>8</option>
           <option value={12}>12</option>
